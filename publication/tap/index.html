@@ -60,10 +60,10 @@
   
     
   
-  <meta name="description" content="We propose to treat the transition data of an MDP as a graph, and define a novel backup operator exploiting this graph structure. Comparing to multi-step backup, our graph backup method allows counterfactual credit assignment, and can reduce the variance that comes from stochastic environment dynamics." />
+  <meta name="description" content="We propose a novel planning-based sequence modelling method that can scale to high dimensionality state-action space." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://ZhengyaoJiang.github.io/publication/gbworkshop/" />
+  <link rel="alternate" hreflang="en-us" href="https://ZhengyaoJiang.github.io/publication/tap/" />
 
   
   
@@ -276,7 +276,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu6c6bd35698fee7d0733691beaa13467e_2774_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu6c6bd35698fee7d0733691beaa13467e_2774_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://ZhengyaoJiang.github.io/publication/gbworkshop/" />
+  <link rel="canonical" href="https://ZhengyaoJiang.github.io/publication/tap/" />
 
   
   
@@ -298,10 +298,10 @@
   <meta property="twitter:card" content="summary_large_image" />
   
   <meta property="og:site_name" content="Zhengyao Jiang" />
-  <meta property="og:url" content="https://ZhengyaoJiang.github.io/publication/gbworkshop/" />
+  <meta property="og:url" content="https://ZhengyaoJiang.github.io/publication/tap/" />
   <meta property="og:title" content="Graph Backup: Data Efficient Backup Exploiting Markovian Data | Zhengyao Jiang" />
-  <meta property="og:description" content="We propose to treat the transition data of an MDP as a graph, and define a novel backup operator exploiting this graph structure. Comparing to multi-step backup, our graph backup method allows counterfactual credit assignment, and can reduce the variance that comes from stochastic environment dynamics." /><meta property="og:image" content="https://ZhengyaoJiang.github.io/publication/gbworkshop/featured.png" />
-    <meta property="twitter:image" content="https://ZhengyaoJiang.github.io/publication/gbworkshop/featured.png" /><meta property="og:locale" content="en-us" />
+  <meta property="og:description" content="We propose a novel planning-based sequence modelling method that can scale to high dimensionality state-action space." /><meta property="og:image" content="https://ZhengyaoJiang.github.io/publication/tap/featured.png" />
+    <meta property="twitter:image" content="https://ZhengyaoJiang.github.io/publication/tap/featured.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
@@ -309,7 +309,7 @@
         content="2017-01-01T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2021-10-13T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2022-08-23T00:00:00&#43;00:00">
   
 
   
@@ -331,16 +331,16 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://ZhengyaoJiang.github.io/publication/gbworkshop/"
+    "@id": "https://ZhengyaoJiang.github.io/publication/tap/"
   },
   "headline": "Graph Backup: Data Efficient Backup Exploiting Markovian Data",
   
   "image": [
-    "https://ZhengyaoJiang.github.io/publication/gbworkshop/featured.png"
+    "https://ZhengyaoJiang.github.io/publication/tap/featured.png"
   ],
   
   "datePublished": "2017-01-01T00:00:00Z",
-  "dateModified": "2021-10-13T00:00:00Z",
+  "dateModified": "2022-08-23T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -355,7 +355,7 @@
       "url": "https://ZhengyaoJiang.github.io/media/icon_hu6c6bd35698fee7d0733691beaa13467e_2774_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "We propose to treat the transition data of an MDP as a graph, and define a novel backup operator exploiting this graph structure. Comparing to multi-step backup, our graph backup method allows counterfactual credit assignment, and can reduce the variance that comes from stochastic environment dynamics."
+  "description": "We propose a novel planning-based sequence modelling method that can scale to high dimensionality state-action space."
 }
 </script>
 
@@ -375,7 +375,7 @@
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="632274e2bf98bac6b52eebdf9b9ec446" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="4d90243bd96aa7c2ed81673a58d0ac59" >
 
   
   
@@ -659,9 +659,11 @@
   <span class="author-highlighted">
       Zhengyao Jiang</span>, <span >
       Tianjun Zhang</span>, <span >
-      Robert Kirk</span>, <span >
+      Micheal Janner</span>, <span >
+      Yueying Li</span>, <span >
       Tim Rocktäschel</span>, <span >
-      Edward Grefenstette</span>
+      Edward Grefenstette</span>, <span >
+      Yuandong Tian</span>
   </div>
   
   
@@ -672,7 +674,7 @@
     
       
     
-    October 2021
+    August 2022
   </span>
   
 
@@ -714,20 +716,32 @@
 
 
 
-<a class="btn btn-outline-primary btn-page-header" href="https://openreview.net/pdf?id=0UQqmPGuL4n" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/pdf/2208.10291.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
 <a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
-        data-filename="/publication/gbworkshop/cite.bib">
+        data-filename="/publication/tap/cite.bib">
   Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header" href="https://github.com/ZhengyaoJiang/latentplan" target="_blank" rel="noopener">
+  Code
 </a>
 
 
 
 
+<a class="btn btn-outline-primary btn-page-header" href="https://sites.google.com/view/latentplan" target="_blank" rel="noopener">
+  Project
+</a>
 
 
 
@@ -745,9 +759,9 @@
 </div>
 
 
-<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 472px; max-height: 151px;">
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 469px;">
   <div style="position: relative">
-    <img src="/publication/gbworkshop/featured_hud1a2ac4bab3e56533f48ae83ce50aa96_20462_720x2500_fit_q75_h2_lanczos_3.webp" width="472" height="151" alt="" class="featured-image">
+    <img src="/publication/tap/featured_hued56831b9f59591fc8cf9af6eec979a6_432465_720x2500_fit_q75_h2_lanczos_3.webp" width="720" height="469" alt="" class="featured-image">
     
   </div>
 </div>
@@ -758,7 +772,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Bootstrapped value estimation has become a widely adopted ingredient for modern reinforcement learning algorithms. These methods compute a target value based on observed data and predictions for future values. The approximation error of the target value, which comes from stochastic dynamics and inaccurate predictions, can significantly affect the data efficiency of RL algorithms. Multi-step methods, such as n-step Q learning and TD(lambda), leverage the chain structure of the data, alleviating the effect of inaccurate predictions and allowing credit assignment across a longer time horizon. However, the main limitation of such multi-step methods is that they fail to exploit the graph structure of certain MDPs by only treating each trajectory independently, resulting in an inadequate estimate of the target value that misses the intersections between multiple trajectories. In this paper, we propose to treat the transition data of an MDP as a graph, and define a novel backup operator exploiting this graph structure. Comparing to multi-step backup, our graph backup method allows counterfactual credit assignment, and can reduce the variance that comes from stochastic environment dynamics. Our empirical evaluation on MiniGrid and Minatar shows graph backup can greatly improve data efficiency compared to one-step and multi-step backup.</p>
+    <p class="pub-abstract">While planning-based sequence modelling methods have shown great potential in continuous control, scaling them to high-dimensional state-action sequences remains an open challenge due to the high computational complexity and innate difficulty of planning in high-dimensional spaces. We propose the Trajectory Autoencoding Planner (TAP), a planning-based sequence modelling RL method that scales to high state-action dimensionalities. Using a state-conditional Vector-Quantized Variational Autoencoder (VQ-VAE), TAP models the conditional distribution of the trajectories given the current state. When deployed as an RL agent, TAP avoids planning step-by-step in a high-dimensional continuous action space but instead looks for the optimal latent code sequences by beam search. Unlike O(D^3) complexity of Trajectory Transformer, TAP enjoys constant O(C) planning computational complexity regarding state-action dimensionality D. Our empirical evaluation also shows the increasingly strong performance of TAP with the growing dimensionality. For Adroit robotic hand manipulation tasks with high state and action dimensionality, TAP surpasses existing model-based methods, including TT, with a large margin and also beats strong model-free actor-critic baselines.</p>
     
 
     
@@ -769,8 +783,8 @@
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Type</div>
           <div class="col-12 col-md-9">
-            <a href="/publication/#1">
-              Conference paper
+            <a href="/publication/#3">
+              Preprint
             </a>
           </div>
         </div>
@@ -786,7 +800,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">In <em>Deep RL Workshop NeurIPS 2021</em></div>
+          <div class="col-12 col-md-9">In <em>Arxiv</em></div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -818,7 +832,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://ZhengyaoJiang.github.io/publication/gbworkshop/&amp;text=Graph%20Backup:%20Data%20Efficient%20Backup%20Exploiting%20Markovian%20Data" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://ZhengyaoJiang.github.io/publication/tap/&amp;text=Graph%20Backup:%20Data%20Efficient%20Backup%20Exploiting%20Markovian%20Data" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -831,7 +845,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://ZhengyaoJiang.github.io/publication/gbworkshop/&amp;t=Graph%20Backup:%20Data%20Efficient%20Backup%20Exploiting%20Markovian%20Data" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://ZhengyaoJiang.github.io/publication/tap/&amp;t=Graph%20Backup:%20Data%20Efficient%20Backup%20Exploiting%20Markovian%20Data" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -844,7 +858,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Graph%20Backup:%20Data%20Efficient%20Backup%20Exploiting%20Markovian%20Data&amp;body=https://ZhengyaoJiang.github.io/publication/gbworkshop/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=Graph%20Backup:%20Data%20Efficient%20Backup%20Exploiting%20Markovian%20Data&amp;body=https://ZhengyaoJiang.github.io/publication/tap/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -857,7 +871,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://ZhengyaoJiang.github.io/publication/gbworkshop/&amp;title=Graph%20Backup:%20Data%20Efficient%20Backup%20Exploiting%20Markovian%20Data" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https://ZhengyaoJiang.github.io/publication/tap/&amp;title=Graph%20Backup:%20Data%20Efficient%20Backup%20Exploiting%20Markovian%20Data" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -870,7 +884,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Graph%20Backup:%20Data%20Efficient%20Backup%20Exploiting%20Markovian%20Data%20https://ZhengyaoJiang.github.io/publication/gbworkshop/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=Graph%20Backup:%20Data%20Efficient%20Backup%20Exploiting%20Markovian%20Data%20https://ZhengyaoJiang.github.io/publication/tap/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -883,7 +897,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://ZhengyaoJiang.github.io/publication/gbworkshop/&amp;title=Graph%20Backup:%20Data%20Efficient%20Backup%20Exploiting%20Markovian%20Data" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://ZhengyaoJiang.github.io/publication/tap/&amp;title=Graph%20Backup:%20Data%20Efficient%20Backup%20Exploiting%20Markovian%20Data" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -998,6 +1012,18 @@
 
     </div>
   </div>
+
+
+  
+    
+
+
+
+
+  
+    
+
+
 
 
   
