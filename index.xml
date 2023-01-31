@@ -5,7 +5,7 @@
     <link>https://ZhengyaoJiang.github.io/</link>
       <atom:link href="https://ZhengyaoJiang.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Zhengyao Jiang</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 23 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 30 Jan 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://ZhengyaoJiang.github.io/media/icon_hu6c6bd35698fee7d0733691beaa13467e_2774_512x512_fill_lanczos_center_3.png</url>
       <title>Zhengyao Jiang</title>
@@ -14,8 +14,16 @@
     
     <item>
       <title>Efficient Planning in a Compact Latent Action Space</title>
+      <link>https://ZhengyaoJiang.github.io/publication/otr/</link>
+      <pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://ZhengyaoJiang.github.io/publication/otr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efficient Planning in a Compact Latent Action Space</title>
       <link>https://ZhengyaoJiang.github.io/publication/tap/</link>
-      <pubDate>Tue, 23 Aug 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://ZhengyaoJiang.github.io/publication/tap/</guid>
       <description></description>
     </item>
