@@ -200,6 +200,57 @@
                 font-size: 1.3em;
             }
         }
+        
+        /* ========= Animated Background (add below your existing CSS) ========= */
+
+        /* 1. Moving gradient “insight blobs” */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200%;          /* oversize so movement never shows edges */
+            height: 200%;
+            pointer-events: none; /* keep UI fully interactive */
+            z-index: -1;
+            background:
+                radial-gradient(circle at 20% 25%,  rgba(0,123,255,0.18)  0%, transparent 55%),
+                radial-gradient(circle at 80% 30%,  rgba(40,167, 69,0.18) 0%, transparent 60%),
+                radial-gradient(circle at 30% 85%, rgba(255,193,  7,0.22) 0%, transparent 60%);
+            filter: blur(60px);
+            animation: moveBlobs 32s linear infinite;
+        }
+
+        @keyframes moveBlobs {
+            0%   { transform: translate(0%,   0%)   scale(1);   }
+            50%  { transform: translate(-25%, -15%) scale(1.25);}
+            100% { transform: translate(0%,   0%)   scale(1);   }
+        }
+
+        /* 2. Ultra‑light rotating “circuit grid” */
+        body::after {
+            content: "";
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            pointer-events: none;
+            z-index: -2;
+            background-image:
+                repeating-linear-gradient(120deg,
+                    rgba(255,255,255,0.03) 0 2px,
+                    transparent            2px 50px),
+                repeating-linear-gradient( 60deg,
+                    rgba(255,255,255,0.03) 0 2px,
+                    transparent            2px 50px);
+            animation: rotateGrid 60s linear infinite;
+        }
+
+        @keyframes rotateGrid {
+            from { transform: rotate(0deg);   }
+            to   { transform: rotate(360deg); }
+        }
     </style>
 </head>
 <body>
