@@ -1,326 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zhengyao Jiang | Cofounder & CEO, Weco.ai</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zhengyao Jiang | Cofounder & CEO, Weco AI</title>
+<meta name="description" content="Zhengyao Jiang, Cofounder & CEO of Weco AI. Research, talks and writing on autoresearch and recursive self-improvement.">
+<link rel="icon" href="icon.png">
 
-    <!-- SEO & Social Sharing Meta Tags -->
-    <meta name="description" content="The personal website of Zhengyao Jiang, Cofounder & CEO of Weco.ai. Exploring automated innovation and the future of AI through systematic, evaluation-driven search.">
-    <link rel="icon" href="icon.png">
+<meta property="og:title" content="Zhengyao Jiang | Cofounder & CEO, Weco AI">
+<meta property="og:description" content="Research, talks and writing on autoresearch and recursive self-improvement.">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/15139574">
+<meta property="og:url" content="https://zhengyaojiang.github.io/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@zhengyaojiang">
 
-    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
-    <meta property="og:title" content="Zhengyao Jiang | Cofounder & CEO, Weco.ai">
-    <meta property="og:description" content="Exploring automated innovation and the future of AI through systematic, evaluation-driven search.">
-    <meta property="og:image" content="https://avatars.githubusercontent.com/u/15139574">
-    <meta property="og:url" content="https://zhengyaojiang.github.io/">
-    <meta property="og:type" content="website">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Zhengyao Jiang",
+  "jobTitle": "Cofounder & CEO",
+  "worksFor": { "@type": "Organization", "name": "Weco AI", "url": "https://www.weco.ai" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "University College London" },
+  "url": "https://zhengyaojiang.github.io/",
+  "image": "https://avatars.githubusercontent.com/u/15139574",
+  "sameAs": [
+    "https://x.com/zhengyaojiang",
+    "https://www.linkedin.com/in/zhengyao-jiang-387b44145/",
+    "https://scholar.google.com/citations?user=J8pFrgwAAAAJ",
+    "https://github.com/ZhengyaoJiang"
+  ]
+}
+</script>
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@zhengyaojiang">
-    <meta name="twitter:title" content="Zhengyao Jiang | Cofounder & CEO, Weco.ai">
-    <meta name="twitter:description" content="Exploring automated innovation and the future of AI through systematic, evaluation-driven search.">
-    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/15139574">
+<style>
+  :root {
+    --bg: #faf8f4;
+    --panel: #ffffff;
+    --ink: #1c1b19;
+    --muted: #6b665e;
+    --rule: #e4dfd6;
+    --accent: #9b1d3f;
+    --accent-ink: #ffffff;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", "Cascadia Mono", Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141312;
+      --panel: #1c1a18;
+      --ink: #ece8e1;
+      --muted: #a29c91;
+      --rule: #2e2b27;
+      --accent: #ff8fab;
+      --accent-ink: #1a0b10;
+    }
+  }
 
-    <style>
-        /* --- General Styles --- */
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            color: #343a40;
-            line-height: 1.7;
-            font-size: 16px;
-        }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16.5px;
+    line-height: 1.65;
+  }
+  a { color: inherit; text-decoration: underline; text-decoration-color: var(--rule); text-decoration-thickness: 1.5px; text-underline-offset: 3px; transition: text-decoration-color .15s, color .15s; }
+  a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+  p { margin: 0 0 1em; }
 
-        /* --- Main Container --- */
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 40px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-        }
+  .page { max-width: 860px; margin: 0 auto; padding: 56px 24px 40px; }
 
-        /* --- Header & Profile --- */
-        header {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-            margin-bottom: 2.5em;
-        }
+  /* Header */
+  header { display: flex; gap: 28px; align-items: center; }
+  header img { width: 104px; height: 104px; border-radius: 50%; object-fit: cover; flex: none; border: 1px solid var(--rule); }
+  h1 { font-family: var(--serif); font-weight: 500; font-size: 2.5rem; line-height: 1.1; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .role { margin: 0; font-size: 1.05rem; }
+  .say { margin: 2px 0 10px; color: var(--muted); font-size: .85rem; font-style: italic; }
+  .links { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: .92rem; }
 
-        .profile-image img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #e9ecef;
-        }
+  /* Sections */
+  section { display: grid; grid-template-columns: 150px 1fr; gap: 0 28px; padding: 34px 0 6px; margin-top: 30px; border-top: 1px solid var(--rule); }
+  section > h2 { font-family: var(--sans); font-size: .76rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 5px 0 14px; }
+  .more { font-size: .9rem; color: var(--muted); }
 
-        .header-text {
-            flex-grow: 1;
-        }
+  /* Entries: research, papers, talks share one quiet list style */
+  ul.items { list-style: none; margin: 0; padding: 0; }
+  ul.items li { padding: 0 0 18px; }
+  ul.items h3 { font-family: var(--serif); font-weight: 500; font-size: 1.16rem; line-height: 1.3; margin: 0 0 2px; }
+  ul.items h3 a { text-decoration-color: transparent; }
+  ul.items h3 a:hover { text-decoration-color: var(--accent); }
+  ul.items p { font-size: .9rem; color: var(--muted); margin: 0; line-height: 1.5; }
+  .more { font-size: .9rem; color: var(--muted); margin-top: 2px; }
+  .about p { max-width: 40em; }
 
-        /* --- Typography --- */
-        h1 {
-            font-size: 2.5em;
-            font-weight: 600;
-            margin: 0 0 0.1em 0;
-            color: #212529;
-        }
+  footer { margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--rule); font-size: .85rem; color: var(--muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px 20px; }
 
-        h2 {
-            font-size: 1.5em;
-            margin-top: 2em;
-            margin-bottom: 1em;
-            padding-bottom: 0.3em;
-            border-bottom: 1px solid #dee2e6;
-            color: #212529;
-        }
-        
-        p {
-            margin-bottom: 1em;
-        }
+  @media (max-width: 700px) {
+    .page { padding: 32px 20px 32px; }
+    header { gap: 18px; align-items: flex-start; }
+    header img { width: 76px; height: 76px; }
+    h1 { font-size: 2rem; }
+    section { grid-template-columns: 1fr; padding-top: 24px; margin-top: 22px; }
+  }
 
-        a {
-            color: #0056b3;
-            text-decoration: none;
-            transition: color 0.2s ease-in-out;
-        }
-
-        a:hover {
-            text-decoration: underline;
-            color: #003d80;
-        }
-
-        .tagline {
-            font-size: 1.1em;
-            color: #6c757d;
-            margin-top: 0;
-            margin-bottom: 0.5em;
-        }
-
-        .pronunciation-guide {
-            font-size: 0.9em;
-            color: #868e96;
-            margin-top: 0;
-            margin-bottom: 1em;
-            font-style: italic;
-        }
-        
-        strong {
-             color: #212529;
-        }
-
-        /* --- Social Links --- */
-        .social-links {
-            display: flex;
-            gap: 20px;
-        }
-
-        .social-links a {
-            display: inline-block;
-        }
-
-        .social-links svg {
-            width: 24px;
-            height: 24px;
-            fill: #6c757d;
-            transition: fill 0.2s ease-in-out;
-        }
-
-        .social-links a:hover svg {
-            fill: #0056b3;
-        }
-
-        /* --- Publications List --- */
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        ul li {
-            margin-bottom: 1.5em;
-            padding-left: 1.5em;
-            position: relative;
-        }
-        
-        ul li::before {
-            content: '•';
-            position: absolute;
-            left: 0;
-            color: #0056b3;
-            font-weight: bold;
-        }
-
-        .publication-authors {
-            display: block;
-            font-size: 0.9em;
-            color: #6c757d;
-            line-height: 1.5;
-            margin: 0.2em 0;
-        }
-        
-        .publication-venue {
-             font-style: italic;
-        }
-
-        /* --- Footer --- */
-        footer {
-            text-align: center;
-            margin-top: 3em;
-            padding-top: 1.5em;
-            border-top: 1px solid #dee2e6;
-            font-size: 0.9em;
-            color: #6c757d;
-        }
-        
-        /* --- Responsive Design --- */
-        @media (max-width: 768px) {
-            .container {
-                margin: 20px;
-                padding: 25px;
-            }
-            header {
-                flex-direction: column;
-                text-align: center;
-                gap: 20px;
-            }
-            .social-links {
-                justify-content: center;
-            }
-            h1 {
-                font-size: 2em;
-            }
-            h2 {
-                font-size: 1.3em;
-            }
-        }
-        
-        /* ========= Animated Background (add below your existing CSS) ========= */
-
-        /* 1. Moving gradient “insight blobs” */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 200%;          /* oversize so movement never shows edges */
-            height: 200%;
-            pointer-events: none; /* keep UI fully interactive */
-            z-index: -1;
-            background:
-                radial-gradient(circle at 20% 25%,  rgba(0,123,255,0.18)  0%, transparent 55%),
-                radial-gradient(circle at 80% 30%,  rgba(40,167, 69,0.18) 0%, transparent 60%),
-                radial-gradient(circle at 30% 85%, rgba(255,193,  7,0.22) 0%, transparent 60%);
-            filter: blur(60px);
-            animation: moveBlobs 32s linear infinite;
-        }
-
-        @keyframes moveBlobs {
-            0%   { transform: translate(0%,   0%)   scale(1);   }
-            50%  { transform: translate(-25%, -15%) scale(1.25);}
-            100% { transform: translate(0%,   0%)   scale(1);   }
-        }
-
-        /* 2. Ultra‑light rotating “circuit grid” */
-        body::after {
-            content: "";
-            position: fixed;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            pointer-events: none;
-            z-index: -2;
-            background-image:
-                repeating-linear-gradient(120deg,
-                    rgba(255,255,255,0.03) 0 2px,
-                    transparent            2px 50px),
-                repeating-linear-gradient( 60deg,
-                    rgba(255,255,255,0.03) 0 2px,
-                    transparent            2px 50px);
-            animation: rotateGrid 60s linear infinite;
-        }
-
-        @keyframes rotateGrid {
-            from { transform: rotate(0deg);   }
-            to   { transform: rotate(360deg); }
-        }
-    </style>
+</style>
 </head>
 <body>
 
-    <div class="container">
+<div class="page">
 
-        <!-- HEADER -->
-        <header>
-            <div class="profile-image">
-                <img src="https://avatars.githubusercontent.com/u/15139574" alt="Zhengyao Jiang">
-            </div>
-            <div class="header-text">
-                <h1>Zhengyao Jiang</h1>
-                <p class="tagline">Cofounder & CEO, <a href="https://weco.ai/" target="_blank">Weco AI</a></p>
-                <p class="pronunciation-guide">Zheng = j-uhng; yao = y-aoww; Jiang = gee-ahng.</p>
-                
-                <!-- SOCIAL LINKS -->
-                <div class="social-links">
-                    <a href="https://x.com/zhengyaojiang" target="_blank" title="X / Twitter">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/zhengyao-jiang-387b44145/" target="_blank" title="LinkedIn">
-                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"/></svg>
-                    </a>
-                    <a href="https://scholar.google.com/citations?user=J8pFrgwAAAAJ&hl=en" target="_blank" title="Google Scholar">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L1 9l3.14 1.57L6 12l6 3 6-3 1.86-1.43L23 9 12 2zm0 12.5L4.47 11l7.53 3.5 7.53-3.5L12 14.5zM5 13.18v4.43c0 .81.65 1.47 1.46 1.47H17.54c.81 0 1.46-.66 1.46-1.47v-4.43l-6.25 2.92a1.5 1.5 0 0 1-1.5 0L5 13.18z"/></svg>
-                    </a>
-                </div>
-            </div>
-        </header>
-
-        <!-- BIOGRAPHY -->
-        <section>
-            <p>I'm Zhengyao Jiang, Cofounder &amp; CEO of <a href="https://weco.ai/" target="_blank">Weco AI</a>, and a computer scientist by training.</p>
-            <p>I believe the scientific method is, at its core, an algorithm: hypothesize → experiment → analyse. As more of our frontier knowledge is encoded in software, from high-frequency trading systems to generative AI training pipelines, the next leap in AI will come from machines that can run the scientific innovation algorithm at scale and encode the knowledge into code.</p>
-            <p><a href="https://weco.ai/" target="_blank">Weco AI</a> is my bet on that future. Our AIDE algorithm converts the slow, manual “hill-climb” of research engineering into a fast, evaluation-driven search that routinely uncovers non-obvious, high-performing solutions. Think of it as a knowledge-generation engine that learns directly from empirical feedback rather than human hunches.</p>
-            <p>This focus on AI systems that learn from external feedback traces back to my PhD work at University College London, supervised by <a href="https://www.linkedin.com/in/rockt/" target="_blank">Tim Rocktäschel</a> and <a href="https://www.egrefen.com/" target="_blank">Edward Grefenstette</a>, where I studied how reinforcement-learning agents can extract maximum value from every interaction with the environment. The same principle now guides everything we build at Weco: squeeze the most insight out of each compute cycle, and let the machine iterate toward discovery.</p>
-        </section>
-
-        <!-- FEATURED PUBLICATIONS -->
-        <section>
-            <h2>Featured Publications</h2>
-            <ul>
-                <li>
-                    <strong>AIDE: AI-Driven Exploration in the Space of Code</strong>
-                    <span class="publication-authors">Zhengyao Jiang, Dominik Schmidt, Dhruv Srikanth, Dixing Xu, Ian Kaplan, Deniss Jacenko, Yuxiang Wu</span>
-                    <span class="publication-venue">arXiv preprint arXiv:2502.13138, 2025.</span>
-                    [<a href="https://arxiv.org/pdf/2502.13138" target="_blank">PDF</a>] [<a href="https://github.com/WecoAI/aideml" target="_blank">Code</a>]
-                </li>
-                <li>
-                    <strong>H-GAP: Humanoid Control with a Generalist Planner</strong>
-                    <span class="publication-authors">Zhengyao Jiang, Yingchen Xu, Nolan Wagener, Yicheng Luo, Michael Janner, Edward Grefenstette, Tim Rocktäschel, Yuandong Tian</span>
-                    <span class="publication-venue">ICLR 2024 (Spotlight).</span>
-                    [<a href="https://arxiv.org/pdf/2312.02682" target="_blank">PDF</a>] [<a href="https://github.com/facebookresearch/hgap" target="_blank">Code</a>]
-                </li>
-                 <li>
-                    <strong>Efficient Planning in a Compact Latent Action Space</strong>
-                    <span class="publication-authors">Zhengyao Jiang, Tianjun Zhang, Michael Janner, Yueying Li, Tim Rocktäschel, Edward Grefenstette, Yuandong Tian</span>
-                    <span class="publication-venue">ICLR 2023.</span>
-                    [<a href="https://arxiv.org/pdf/2208.10291" target="_blank">PDF</a>] [<a href="https://github.com/ZhengyaoJiang/latentplan" target="_blank">Code</a>]
-                </li>
-            </ul>
-        </section>
-
-        <!-- FOOTER -->
-        <footer>
-            © 2025 Zhengyao Jiang
-        </footer>
-
+  <header>
+    <img src="https://avatars.githubusercontent.com/u/15139574" alt="Zhengyao Jiang">
+    <div>
+      <h1>Zhengyao Jiang</h1>
+      <p class="role">Cofounder &amp; CEO, <a href="https://www.weco.ai/?utm_source=zhengyaojiang.github.io&utm_medium=referral&utm_campaign=personal_site">Weco AI</a></p>
+      <p class="say">Zheng = j-uhng; yao = y-aoww; Jiang = gee-ahng.</p>
+      <nav class="links">
+        <a href="https://x.com/zhengyaojiang">X</a>
+        <a href="https://www.linkedin.com/in/zhengyao-jiang-387b44145/">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=J8pFrgwAAAAJ&hl=en">Google Scholar</a>
+        <a href="https://github.com/ZhengyaoJiang">GitHub</a>
+      </nav>
     </div>
+  </header>
 
+  <!-- ABOUT -->
+  <section class="about">
+    <h2>About</h2>
+    <div>
+      <p>I'm Zhengyao Jiang, Cofounder &amp; CEO of <a href="https://www.weco.ai/?utm_source=zhengyaojiang.github.io&utm_medium=referral&utm_campaign=personal_site">Weco AI</a>, where we build autoresearch systems: AI that runs the experiments and improves the code itself.</p>
+      <p>I believe the scientific method is, at its core, an algorithm: hypothesize &rarr; experiment &rarr; analyse. As more of our frontier knowledge is encoded in software, from high-frequency trading systems to generative AI training pipelines, the next leap in AI will come from machines that can run the scientific innovation algorithm at scale and encode the knowledge into code.</p>
+      <p><a href="https://www.weco.ai/?utm_source=zhengyaojiang.github.io&utm_medium=referral&utm_campaign=personal_site">Weco AI</a> is my bet on that future. Our AIDE algorithm converts the slow, manual &ldquo;hill-climb&rdquo; of research engineering into a fast, evaluation-driven search that routinely uncovers non-obvious, high-performing solutions. Think of it as a knowledge-generation engine that learns directly from empirical feedback rather than human hunches.</p>
+      <p>This focus on AI systems that learn from external feedback traces back to my PhD work at University College London, supervised by <a href="https://www.linkedin.com/in/rockt/">Tim Rockt&auml;schel</a> and <a href="https://www.egrefen.com/">Edward Grefenstette</a>, where I studied how reinforcement-learning agents can extract maximum value from every interaction with the environment. The same principle now guides everything we build at Weco: squeeze the most insight out of each compute cycle, and let the machine iterate toward discovery.</p>
+    </div>
+  </section>
+
+  <!-- PAPERS -->
+  <section>
+    <h2>Selected papers</h2>
+    <div>
+      <ul class="items">
+        <li>
+          <h3><a href="https://arxiv.org/abs/2609.26457">Recursive self-improvement of AI research agents</a></h3>
+          <p>Dhruv Srikanth, Bingchen Zhao, Dixing Xu, Yuxiang Wu, Zhengyao Jiang</p>
+          <p><em>arXiv:2609.26457, 2026</em> &middot; <a href="https://arxiv.org/pdf/2609.26457">PDF</a> &middot; <a href="https://www.weco.ai/blog/first-evidence-of-recursive-self-improvement?utm_source=zhengyaojiang.github.io&utm_medium=referral&utm_campaign=personal_site">AIDE&sup2; report</a></p>
+        </li>
+        <li>
+          <h3><a href="https://arxiv.org/abs/2605.21384">SpecBench: Measuring Reward Hacking in Long-Horizon Coding Agents</a></h3>
+          <p>Bingchen Zhao, Dhruv Srikanth, Yuxiang Wu, Zhengyao Jiang</p>
+          <p><em>arXiv:2605.21384, 2026</em> &middot; <a href="https://arxiv.org/pdf/2605.21384">PDF</a> &middot; <a href="https://github.com/WecoAI/SpecBench">Code</a></p>
+        </li>
+        <li>
+          <h3><a href="https://arxiv.org/abs/2502.13138">AIDE: AI-Driven Exploration in the Space of Code</a></h3>
+          <p>Zhengyao Jiang, Dominik Schmidt, Dhruv Srikanth, Dixing Xu, Ian Kaplan, Deniss Jacenko, Yuxiang Wu</p>
+          <p><em>arXiv:2502.13138, 2025</em> &middot; <a href="https://arxiv.org/pdf/2502.13138">PDF</a> &middot; <a href="https://github.com/WecoAI/aideml">Code</a></p>
+        </li>
+        <li>
+          <h3><a href="https://arxiv.org/abs/2312.02682">H-GAP: Humanoid Control with a Generalist Planner</a></h3>
+          <p>Zhengyao Jiang, Yingchen Xu, Nolan Wagener, Yicheng Luo, Michael Janner, Edward Grefenstette, Tim Rockt&auml;schel, Yuandong Tian</p>
+          <p><em>ICLR 2024 (Spotlight)</em> &middot; <a href="https://arxiv.org/pdf/2312.02682">PDF</a> &middot; <a href="https://github.com/facebookresearch/hgap">Code</a></p>
+        </li>
+        <li>
+          <h3><a href="https://arxiv.org/abs/2208.10291">Efficient Planning in a Compact Latent Action Space</a></h3>
+          <p>Zhengyao Jiang, Tianjun Zhang, Michael Janner, Yueying Li, Tim Rockt&auml;schel, Edward Grefenstette, Yuandong Tian</p>
+          <p><em>ICLR 2023</em> &middot; <a href="https://arxiv.org/pdf/2208.10291">PDF</a> &middot; <a href="https://github.com/ZhengyaoJiang/latentplan">Code</a></p>
+        </li>
+        <li>
+          <h3><a href="https://arxiv.org/abs/1706.10059">A Deep Reinforcement Learning Framework for the Financial Portfolio Management Problem</a></h3>
+          <p>Zhengyao Jiang, Dixing Xu, Jinjun Liang</p>
+          <p><em>arXiv:1706.10059, 2017</em> &middot; <a href="https://arxiv.org/pdf/1706.10059">PDF</a></p>
+        </li>
+      </ul>
+      <p class="more"><a href="https://scholar.google.com/citations?user=J8pFrgwAAAAJ&hl=en">Full list on Google Scholar</a></p>
+    </div>
+  </section>
+
+  <!-- TALKS -->
+  <section>
+    <h2>Talks &amp; podcasts</h2>
+    <div>
+      <ul class="items">
+        <li>
+          <h3><a href="https://www.youtube.com/watch?v=yB6_iFGTq9k">Can Rewriting an AI Agent Bend the Intelligence Curve?</a></h3>
+          <p><em>Machine Learning Street Talk, October 2026</em> &middot; <a href="https://www.youtube.com/watch?v=yB6_iFGTq9k">Video</a></p>
+        </li>
+        <li>
+          <h3><a href="talks/bold-2026-frontier-research-outside-the-big-labs.pdf">Frontier Research Outside the Big Labs</a></h3>
+          <p><em>BOLD Launch Festival, Oxford, August 2026</em> &middot; <a href="talks/bold-2026-frontier-research-outside-the-big-labs.pdf">Slides</a></p>
+        </li>
+        <li>
+          <h3><a href="https://www.youtube.com/watch?v=iCj_ATyThvc">How Autoresearch is changing ML research</a></h3>
+          <p><em>AI Engineer World's Fair, San Francisco, July 2026</em> &middot; <a href="https://www.youtube.com/watch?v=iCj_ATyThvc">Video</a></p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- BLOG POSTS -->
+  <section>
+    <h2>Blog posts</h2>
+    <div>
+      <ul class="items">
+        <li>
+          <h3><a href="https://www.weco.ai/blog/4-levels-of-recursive-self-improvement?utm_source=zhengyaojiang.github.io&utm_medium=referral&utm_campaign=personal_site">4 Levels of Recursive Self-Improvement</a></h3>
+          <p>Weco team</p>
+          <p><em>Weco, July 2026</em></p>
+        </li>
+        <li>
+          <h3><a href="https://www.weco.ai/blog/parameter-golf-aiden?utm_source=zhengyaojiang.github.io&utm_medium=referral&utm_campaign=personal_site">An AI Agent Became the #1 Contributor in OpenAI's Hiring Challenge</a></h3>
+          <p>Weco team</p>
+          <p><em>Weco, June 2026</em></p>
+        </li>
+        <li>
+          <h3><a href="https://www.weco.ai/blog/autoresearch-vs-classical-hpo?utm_source=zhengyaojiang.github.io&utm_medium=referral&utm_campaign=personal_site">AutoResearch vs Classical Hyperparameter Tuning</a></h3>
+          <p>Zhengyao Jiang, Bingchen Zhao</p>
+          <p><em>Weco, April 2026</em></p>
+        </li>
+        <li>
+          <h3><a href="https://www.weco.ai/blog/eval-is-not-a-tool-you-install?utm_source=zhengyaojiang.github.io&utm_medium=referral&utm_campaign=personal_site">How to Build a Good Eval</a></h3>
+          <p>Zhengyao Jiang</p>
+          <p><em>Weco, February 2026</em></p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <span>&copy; 2026 Zhengyao Jiang</span>
+    <span>London</span>
+  </footer>
+
+</div>
 </body>
 </html>
